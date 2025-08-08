@@ -1,0 +1,122 @@
+{
+    "ministry": {
+        "name": "Ministry of Special Projects",
+        "state": "Imo State"
+    },
+    "website_sections": {
+        "header_branding": {
+            "logo": "The header section should contain the logo",
+            "navigation_menu": [
+                "Home",
+                "About",
+                "Services",
+                "Projects",
+                "Departments",
+                "Contact Us"
+            ],
+            "contact_info_in_header": {
+                "address": "Ministry of Special Duties, block 10, State Secretariat Complex, Imo, Nigeria",
+                "phone": "0814 397 5074",
+                "email": "imost.ministryofspecialduties@gmail.com",
+                "facebook": "https://www.facebook.com/p/Ministry-of-Special-Duties-Imo-State-100095781721605/?locale=ga_IE"
+            }
+        },
+        "homepage": {
+            "hero_section": {
+                "banner": "A leading catalyst for sustainable development"
+            },
+            "news_section": "A news section",
+            "introduction_section": {
+                "commissioner_biography": "Hon. Dr. Elias Emedom is a seasoned public servant in Imo State, currently serving as Commissioner for Special Projects, where he is likely central to driving critical infrastructure and development initiatives. He has also held portfolios in Mines & Solid Minerals and Sanitation/Hygiene, demonstrating experience across diverse sectors of governance.",
+                "button": "Learn more button"
+            },
+            "services_cards": "Cards for services with learn more buttons",
+            "search_section": "Search section on the bottom",
+            "newsletter": "Newsletter on the contact footer section"
+        },
+        "about_us": {
+            "structure": [
+                {
+                    "section": "Introduction",
+                    "content": "Photo and biography of the commissioner"
+                },
+                {
+                    "section": "About Us Button",
+                    "leads_to": "About menu",
+                    "contains": {
+                        "mission_statement": "To plan and manage special projects that support development in Imo State, work with other ministries, and make sure projects are done well, on time, and for the good of the people.",
+                        "vision_statement": "To help build a better Imo State by leading important projects that improve lives, grow communities, and support progress.",
+                        "commissioner_biography": "Hon.Dr. Elias Emedom is a seasoned public servant in Imo State, currently serving as Commissioner for Special Projects, where he is likely central to driving critical infrastructure and development initiatives. He has also held portfolios in Mines & Solid Minerals and Sanitation/Hygiene, demonstrating experience across diverse sectors of governance."
+                    }
+                },
+                { 
+                    "section": "Donor Agencies",
+                    "agencies": [
+                        "United State Agency for International Development (USAID)",
+                        "World Bank",
+                        "Niger Delta Development Commission (NDDC)",
+                        "Nigerian Capital Development Fund (NCDF)"
+                    ]
+                }
+            ]
+        },
+        "departments_agencies": {
+            "structure": "The department menu should lead to a page with cards for the departments/agencies with learn more buttons",
+            "note": "NO AGENCIES OR DEPARTMENTS WERE FOUND FOR THE MINISTRY DURING THE RESEARCH"
+        },
+        "projects": {
+            "structure": "The project menu should lead to a page containing cards for projects with learn more buttons",
+            "current_projects": [
+                {
+                    "name": "World Bank–Supported Community & Social Development Projects (CSDP)",
+                    "features": "Learn more button"
+                },
+                {
+                    "name": "Light Up Imo Project",
+                    "features": "Learn more button"
+                },
+                {
+                    "name": "Road Infrastructure and Anti-Flood Projects",
+                    "features": "Learn more button"
+                },
+                {
+                    "name": "Imo Digital City",
+                    "features": "Learn more button"
+                }
+            ]
+        },
+        "contact_us": {
+            "structure": "Contact Us menu should lead to a page containing:",
+            "contact_information": {
+                "address": "Ministry of Special Duties, block 10, State Secretariat Complex, Imo, Nigeria",
+                "phone": "0814 397 5074",
+                "email": "imost.ministryofspecialduties@gmail.com",
+                "facebook": "https://www.facebook.com/p/Ministry-of-Special-Duties-Imo-State-100095781721605/?locale=ga_IE"
+            },
+            "feedback_section": "Feedback/comments section",
+            "contact_form": {
+                "description": "A user contact form",
+                "submit_button": "Submit button"
+            }
+        },
+        "news_events": {
+            "location": "The news link section should be on the hero section",
+            "news": [
+                {
+                    "title": "Climate Action Knowledge Paper Unveiled",
+                    "date": "MAY, 2025"
+                },
+                {
+                    "title": "First International Flight from Sam Mbakwe Airport",
+                    "date": "MAY 11, 2025"
+                }
+            ],
+            "events": [
+                {
+                    "title": "Launch of AI Innovation Hub",
+                    "date": "APRIL, 2025"
+                }
+            ]
+        }
+    }
+}
