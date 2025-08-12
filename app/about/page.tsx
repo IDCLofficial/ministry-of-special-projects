@@ -307,12 +307,6 @@ export default function About() {
                             <div className="p-6">
                                 <h3 className="text-xl font-bold text-gray-900">Hon. Dr. Elias Emedom</h3>
                                 <p className="text-green-700 font-medium mt-1">Commissioner for Special Projects</p>
-                                <p className="mt-4 text-gray-600">
-                                    A seasoned public servant in Imo State, currently serving as Commissioner for Special Projects,
-                                    where he is central to driving critical infrastructure and development initiatives. He has also
-                                    held portfolios in Mines & Solid Minerals and Sanitation/Hygiene, demonstrating experience
-                                    across diverse sectors of governance.
-                                </p>
                             </div>
                         </div>
 
@@ -330,12 +324,6 @@ export default function About() {
                             <div className="p-6">
                                 <h3 className="text-xl font-bold text-gray-900">[Permanent Secretary&apos;s Name]</h3>
                                 <p className="text-green-700 font-medium mt-1">Permanent Secretary</p>
-                                <p className="mt-4 text-gray-600">
-                                    The Permanent Secretary provides administrative leadership and ensures the smooth operation of the
-                                    Ministry of Special Projects. Working closely with the Commissioner, they oversee the implementation
-                                    of key initiatives including the Light Up Imo Project, Road Infrastructure development, and
-                                    other critical projects that drive progress across Imo State.
-                                </p>
                             </div>
                         </div>
                     </div>
