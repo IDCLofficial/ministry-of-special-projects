@@ -53,12 +53,6 @@ export default function Services() {
                                         Technology transfer programs
                                     </li>
                                 </ul>
-                                <Link 
-                                    href="/services/extension" 
-                                    className="inline-block text-green-600 hover:text-green-700 font-medium"
-                                >
-                                    Learn More →
-                                </Link>
                             </div>
                         </AnimatedEntrance>
 
@@ -91,12 +85,6 @@ export default function Services() {
                                     Farm mechanization services
                                 </li>
                             </ul>
-                            <Link 
-                                href="/services/crop-production" 
-                                className="inline-block text-green-600 hover:text-green-700 font-medium"
-                            >
-                                Learn More →
-                            </Link>
                             </div>
                         </AnimatedEntrance>
 
@@ -129,12 +117,6 @@ export default function Services() {
                                     Feed production support
                                 </li>
                             </ul>
-                            <Link 
-                                href="/services/livestock" 
-                                className="inline-block text-green-600 hover:text-green-700 font-medium"
-                            >
-                                Learn More →
-                            </Link>
                             </div>
                         </AnimatedEntrance>
 
@@ -166,12 +148,6 @@ export default function Services() {
                                     Water resource management
                                 </li>
                             </ul>
-                            <Link 
-                                href="/services/natural-resources" 
-                                className="inline-block text-green-600 hover:text-green-700 font-medium"
-                            >
-                                Learn More →
-                            </Link>
                         </div>
 
                         {/* Service 5 - Agricultural Credit & Finance */}
@@ -202,12 +178,6 @@ export default function Services() {
                                     Agricultural insurance
                                 </li>
                             </ul>
-                            <Link 
-                                href="/services/credit-finance" 
-                                className="inline-block text-green-600 hover:text-green-700 font-medium"
-                            >
-                                Learn More →
-                            </Link>
                         </div>
 
                         {/* Service 6 - Market Development */}
@@ -238,12 +208,6 @@ export default function Services() {
                                     Agribusiness support
                                 </li>
                             </ul>
-                            <Link 
-                                href="/services/market-development" 
-                                className="inline-block text-green-600 hover:text-green-700 font-medium"
-                            >
-                                Learn More →
-                            </Link>
                         </div>
                     </div>
                 </div>
