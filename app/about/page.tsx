@@ -26,22 +26,22 @@ export default function About() {
                         <div className="order-1 lg:order-2">
                             <AnimatedEntrance {...ANIMATION_PRESETS.TEXT_FADE_RIGHT} delay={200}>
                                 <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
-                                    The Ministry of Special Projects is dedicated to planning and managing special projects that support development in Imo State. 
+                                    The Ministry of Special Projects is dedicated to planning and managing special projects that support development in Imo State.
                                     We work collaboratively with other ministries to ensure projects are completed effectively, on schedule, and for the benefit of all citizens.
                                 </p>
                             </AnimatedEntrance>
                             <AnimatedEntrance {...ANIMATION_PRESETS.TEXT_FADE_RIGHT} delay={400}>
                                 <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
-                                    Our ministry serves as a leading catalyst for sustainable development in Imo State, focusing on 
-                                    critical infrastructure and development initiatives. We drive progress through strategic planning, 
-                                    effective project management, and collaboration with various stakeholders to ensure the successful 
+                                    Our ministry serves as a leading catalyst for sustainable development in Imo State, focusing on
+                                    critical infrastructure and development initiatives. We drive progress through strategic planning,
+                                    effective project management, and collaboration with various stakeholders to ensure the successful
                                     implementation of key projects that enhance the quality of life for all Imo citizens.
                                 </p>
                             </AnimatedEntrance>
                             <AnimatedEntrance {...ANIMATION_PRESETS.TEXT_FADE_RIGHT} delay={600}>
                                 <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
-                                    We are committed to building a better Imo State by leading important projects that improve lives, 
-                                    grow communities, and support progress. Our vision is to enhance the state&apos;s development through 
+                                    We are committed to building a better Imo State by leading important projects that improve lives,
+                                    grow communities, and support progress. Our vision is to enhance the state&apos;s development through
                                     well-planned and efficiently executed projects that create lasting positive impact across all sectors.
                                 </p>
                             </AnimatedEntrance>
@@ -61,7 +61,7 @@ export default function About() {
                                     Our Vision
                                 </h2>
                                 <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
-                                    To help build a better Imo State by leading important projects that improve lives, 
+                                    To help build a better Imo State by leading important projects that improve lives,
                                     grow communities, and support progress across all sectors of development.
                                 </p>
                             </div>
@@ -74,8 +74,8 @@ export default function About() {
                                     Our Mission
                                 </h2>
                                 <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-4">
-                                    To plan and manage special projects that support development in Imo State, 
-                                    work with other ministries, and ensure projects are completed effectively, 
+                                    To plan and manage special projects that support development in Imo State,
+                                    work with other ministries, and ensure projects are completed effectively,
                                     on time, and for the benefit of all citizens.
                                 </p>
                                 <div className="space-y-3 sm:space-y-4">
@@ -98,6 +98,43 @@ export default function About() {
                                 </div>
                             </div>
                         </AnimatedEntrance>
+                    </div>
+                </div>
+            </section>
+
+            {/* Commissioner Profile Section */}
+            <section className="py-12 sm:py-16 md:py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+                        <div className="order-2 lg:order-1">
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
+                                Hon. Dr. Elias Emedom
+                            </h2>
+                            <p className="text-lg sm:text-xl text-green-600 font-semibold mb-4 sm:mb-6">
+                                Honorable Commissioner for Special Projects
+                            </p>
+                            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
+                                Hon. Dr. Elias Emedom is a seasoned public servant in Imo State, currently serving as Commissioner for Special Projects,
+                                where he is central to driving critical infrastructure and development initiatives. With a wealth of experience
+                                across various sectors of governance, Dr. Emedom has previously held key portfolios including Mines & Solid Minerals
+                                and Sanitation/Hygiene, demonstrating his versatility and commitment to public service.
+                            </p>
+                            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
+                                Under his leadership, the Ministry of Special Projects has been instrumental in coordinating and implementing
+                                key development initiatives across Imo State. Dr. Emedom&apos;s strategic vision and hands-on approach have been
+                                pivotal in ensuring the successful execution of projects that directly impact the lives of Imo State residents,
+                                fostering sustainable development and improving infrastructure across the state.
+                            </p>
+                        </div>
+                        <div className="order-1 lg:order-2">
+                            <Image
+                                src="/assets/no-image.png"
+                                alt="Hon. Dr. Elias Emedom - Honorable Commissioner"
+                                width={500}
+                                height={600}
+                                className="rounded-lg shadow-lg w-full h-auto"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -205,39 +242,42 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Commissioner Profile Section */}
-            <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
+            {/* Strategic Goals Section */}
+            <section className="py-16 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
-                        <div className="order-2 lg:order-1">
-                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-                                Hon. Dr. Elias Emedom
-                            </h2>
-                            <p className="text-lg sm:text-xl text-green-600 font-semibold mb-4 sm:mb-6">
-                                Honorable Commissioner for Special Projects
-                            </p>
-                            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
-                                Hon. Dr. Elias Emedom is a seasoned public servant in Imo State, currently serving as Commissioner for Special Projects, 
-                                where he is central to driving critical infrastructure and development initiatives. With a wealth of experience 
-                                across various sectors of governance, Dr. Emedom has previously held key portfolios including Mines & Solid Minerals 
-                                and Sanitation/Hygiene, demonstrating his versatility and commitment to public service.
-                            </p>
-                            <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8">
-                                Under his leadership, the Ministry of Special Projects has been instrumental in coordinating and implementing 
-                                key development initiatives across Imo State. Dr. Emedom&apos;s strategic vision and hands-on approach have been 
-                                pivotal in ensuring the successful execution of projects that directly impact the lives of Imo State residents, 
-                                fostering sustainable development and improving infrastructure across the state.
-                            </p>
-                        </div>
-                        <div className="order-1 lg:order-2">
-                            <Image
-                                src="/assets/no-image.png"
-                                alt="Hon. Dr. Elias Emedom - Honorable Commissioner"
-                                width={500}
-                                height={600}
-                                className="rounded-lg shadow-lg w-full h-auto"
-                            />
-                        </div>
+                    <div className="text-center mb-10">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Strategic Objectives</h2>
+                        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                            The Ministry of Special Projects is committed to these key objectives to drive development and improve the quality of life in Imo State.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {[
+                            "Implement high-impact infrastructure projects that address critical needs across Imo State.",
+                            "Foster community-driven development through participatory project planning and implementation.",
+                            "Enhance public infrastructure to support economic growth and improve living standards.",
+                            "Promote technology and innovation as drivers of sustainable development.",
+                            "Ensure timely and efficient project delivery through effective planning and monitoring.",
+                            "Build strong partnerships with development agencies and private sector stakeholders.",
+                            "Prioritize projects that create employment opportunities for youth and women.",
+                            "Enhance transparency and accountability in project implementation.",
+                            "Ensure equitable distribution of development projects across all local government areas.",
+                            "Leverage technology to improve service delivery and project outcomes."
+                        ].map((goal, index) => (
+                            <AnimatedEntrance
+                                key={index}
+                                {...ANIMATION_PRESETS.CARD_FADE_UP}
+                                delay={0.1 * index}
+                            >
+                                <div className="flex items-start p-4 bg-white rounded-lg shadow-sm">
+                                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                                        <span className="text-green-600 font-semibold">{index + 1}</span>
+                                    </div>
+                                    <p className="text-gray-700">{goal}</p>
+                                </div>
+                            </AnimatedEntrance>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -268,9 +308,9 @@ export default function About() {
                                 <h3 className="text-xl font-bold text-gray-900">Hon. Dr. Elias Emedom</h3>
                                 <p className="text-green-700 font-medium mt-1">Commissioner for Special Projects</p>
                                 <p className="mt-4 text-gray-600">
-                                    A seasoned public servant in Imo State, currently serving as Commissioner for Special Projects, 
-                                    where he is central to driving critical infrastructure and development initiatives. He has also 
-                                    held portfolios in Mines & Solid Minerals and Sanitation/Hygiene, demonstrating experience 
+                                    A seasoned public servant in Imo State, currently serving as Commissioner for Special Projects,
+                                    where he is central to driving critical infrastructure and development initiatives. He has also
+                                    held portfolios in Mines & Solid Minerals and Sanitation/Hygiene, demonstrating experience
                                     across diverse sectors of governance.
                                 </p>
                             </div>
@@ -291,9 +331,9 @@ export default function About() {
                                 <h3 className="text-xl font-bold text-gray-900">[Permanent Secretary&apos;s Name]</h3>
                                 <p className="text-green-700 font-medium mt-1">Permanent Secretary</p>
                                 <p className="mt-4 text-gray-600">
-                                    The Permanent Secretary provides administrative leadership and ensures the smooth operation of the 
-                                    Ministry of Special Projects. Working closely with the Commissioner, they oversee the implementation 
-                                    of key initiatives including the Light Up Imo Project, Road Infrastructure development, and 
+                                    The Permanent Secretary provides administrative leadership and ensures the smooth operation of the
+                                    Ministry of Special Projects. Working closely with the Commissioner, they oversee the implementation
+                                    of key initiatives including the Light Up Imo Project, Road Infrastructure development, and
                                     other critical projects that drive progress across Imo State.
                                 </p>
                             </div>
