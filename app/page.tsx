@@ -29,7 +29,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
             <AnimatedEntrance {...ANIMATION_PRESETS.IMAGE_FADE_UP} className="order-2 lg:order-1">
               <Image
-                src="/assets/no-image.png"
+                src="/photos/Photo - Ministry of Special Projects.jpg"
                 alt="Ministry of Special Projects initiatives"
                 width={600}
                 height={400}
@@ -89,7 +89,7 @@ export default function Home() {
             <div className="flex-1 order-1 lg:order-2">
               <AnimatedEntrance {...ANIMATION_PRESETS.IMAGE_FADE_UP}>
                 <Image
-                  src="/assets/no-image.png"
+                  src="/photos/Hon. Dr. Elias Emedom.webp"
                   alt="Hon. Dr. Elias Emedom - Honourable Commissioner for Special Projects"
                   width={500}
                   height={600}
@@ -177,20 +177,31 @@ export default function Home() {
         <div className="px-4 sm:px-6 lg:px-20 relative z-10">
           <AnimatedEntrance {...ANIMATION_PRESETS.TITLE_FADE_DOWN} className="text-center mb-6 sm:mb-8 md:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">
-              Environmental Partners
+              Development Partners
             </h2>
           </AnimatedEntrance>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-4 sm:gap-6 md:gap-8 items-center">
-            {[1, 2, 3, 4, 5, 6, 7].map((item, index) => (
-              <AnimatedEntrance key={item} {...ANIMATION_PRESETS.CARD_FADE_UP} delay={STAGGER_DELAYS.FAST[index] || STAGGER_DELAYS.FAST[5]}>
+          <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-6 sm:gap-8 items-center">
+            {[
+              { name: "United State Agency for International Development", abr: "USAID", logo: "/photos/usaid-logo.png" },
+              { name: "World Bank", abr: "WB", logo: "/photos/world-bank-logo.png" },
+              { name: "Niger Delta Development Commission", abr: "NDDC", logo: "/photos/nddc-logo.png" },
+              { name: "Nigerian Capital Development Fund", abr: "NCDF", logo: "/photos/ncdf-logo.png" }
+            ].map((partner, index) => (
+              <AnimatedEntrance
+                key={partner.abr}
+                {...ANIMATION_PRESETS.CARD_FADE_UP}
+                delay={STAGGER_DELAYS.MEDIUM[index % STAGGER_DELAYS.MEDIUM.length]}
+                className="flex items-center justify-center"
+              >
                 <div className="text-center hover:transform hover:scale-110 transition-all duration-300 cursor-pointer">
                   <div className="bg-white p-2 rounded-lg shadow-sm">
-                    <Image 
-                      src="/assets/no-image.png"
-                      alt={`Environmental Partner ${item}`}
+                    <Image
+                      src={partner.logo}
+                      alt={`Partner ${partner.name}`}
                       width={100}
+                      title={`Partner ${partner.name}`}
                       height={60}
-                      className="w-full h-auto object-contain"
+                      className="w-full h-auto object-contain aspect-[2/1]"
                     />
                   </div>
                 </div>

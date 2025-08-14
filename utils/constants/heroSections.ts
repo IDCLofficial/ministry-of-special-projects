@@ -36,10 +36,8 @@ export const HERO_CONFIGS = {
   SERVICES: {
     title: "Our Project Portfolio",
     description: "Explore our diverse range of development projects and initiatives transforming communities across Imo State",
-    backgroundGradient: "bg-gradient-to-r from-blue-600 to-blue-500",
     height: 'medium' as const,
-    alignment: 'center' as const,
-    overlay: false
+    alignment: 'left' as const,
   },
   
   NEWS: {

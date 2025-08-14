@@ -16,7 +16,7 @@ export default function About() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
                         <AnimatedEntrance {...ANIMATION_PRESETS.IMAGE_FADE_UP} className="order-2 lg:order-1">
                             <Image
-                                src="/assets/no-image.png"
+                                src="/photos/Photo - Ministry of Special Projects.jpg"
                                 alt="Ministry of Special Projects - Driving Development in Imo State"
                                 width={600}
                                 height={400}
@@ -126,9 +126,9 @@ export default function About() {
                                 fostering sustainable development and improving infrastructure across the state.
                             </p>
                         </div>
-                        <div className="order-1 lg:order-2">
+                        <div className="order-1 lg:order-2 aspect-[3/4]">
                             <Image
-                                src="/assets/no-image.png"
+                                src="/photos/Hon. Dr. Elias Emedom.webp"
                                 alt="Hon. Dr. Elias Emedom - Honorable Commissioner"
                                 width={500}
                                 height={600}
@@ -295,9 +295,9 @@ export default function About() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
                         {/* Commissioner */}
                         <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
-                            <div className="h-64 bg-gray-100 overflow-hidden">
+                            <div className="aspect-[3.8/4] bg-gray-100 overflow-hidden">
                                 <Image
-                                    src="/assets/no-image.png"
+                                    src="/photos/Hon. Dr. Elias Emedom.webp"
                                     alt="Hon. Dr. Elias Emedom - Commissioner for Special Projects"
                                     width={400}
                                     height={400}
@@ -312,9 +312,9 @@ export default function About() {
 
                         {/* Permanent Secretary */}
                         <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
-                            <div className="h-64 bg-gray-100 overflow-hidden">
+                            <div className="aspect-[3.8/4] bg-gray-100 overflow-hidden">
                                 <Image
-                                    src="/assets/no-image.png"
+                                    src="/photos/Angela O. John-Njoku(Mrs) Fcai, JP Permanent Secretary(CD)  Ministry Of Special Projects.jpeg"
                                     alt="Permanent Secretary - Ministry of Special Projects"
                                     width={400}
                                     height={400}
@@ -348,7 +348,7 @@ export default function About() {
                         </div>
                         <div>
                             <Image
-                                src="/assets/no-image.png"
+                                src="/photos/Structure - Ministry of Special Projects.jpg"
                                 alt="Ministry of Special Projects - Organizational Structure"
                                 width={600}
                                 height={400}
