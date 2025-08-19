@@ -322,7 +322,7 @@ export default function About() {
                                 />
                             </div>
                             <div className="p-6">
-                                <h3 className="text-xl font-bold text-gray-900">[Permanent Secretary&apos;s Name]</h3>
+                                <h3 className="text-xl font-bold text-gray-900">Angela O. John-Njoku (Mrs) Fcai, JP</h3>
                                 <p className="text-green-700 font-medium mt-1">Permanent Secretary</p>
                             </div>
                         </div>
