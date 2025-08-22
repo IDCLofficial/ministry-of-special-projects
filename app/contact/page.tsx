@@ -12,15 +12,18 @@ export default function Contact() {
         email: "",
         subject: "",
         message: "",
+        notRobot: false,
     });
     const [errors, setErrors] = useState<
-        Partial<Record<"name" | "company" | "phone" | "email" | "subject" | "message", string>>
+        Partial<Record<"name" | "company" | "phone" | "email" | "subject" | "message" | "notRobot", string>>
     >({});
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleChange = useCallback(
         (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-            const { name, value } = e.target;
+            const { name, type } = e.target;
+            const value = type === 'checkbox' ? (e.target as HTMLInputElement).checked : e.target.value;
+            
             setFormValues((prev) => ({ ...prev, [name]: value }));
             if (errors[name as keyof typeof errors]) {
                 setErrors((prev) => {
@@ -41,6 +44,7 @@ export default function Contact() {
         if (values.phone && !/^[\d\s()+-]{7,20}$/.test(values.phone)) nextErrors.phone = "Enter a valid phone";
         if (!values.subject.trim()) nextErrors.subject = "Subject is required";
         if (!values.message.trim() || values.message.trim().length < 10) nextErrors.message = "Message should be at least 10 characters";
+        if (!values.notRobot) nextErrors.notRobot = "Please confirm you are not a robot";
         return nextErrors;
     }, []);
 
@@ -57,7 +61,7 @@ export default function Contact() {
             try {
                 await new Promise((resolve) => setTimeout(resolve, 1200));
                 toast.success("Message sent successfully!");
-                setFormValues({ name: "", company: "", phone: "", email: "", subject: "", message: "" });
+                setFormValues({ name: "", company: "", phone: "", email: "", subject: "", message: "", notRobot: false });
                 setErrors({});
             } finally {
                 setIsSubmitting(false);
@@ -127,7 +131,7 @@ export default function Contact() {
                                     </div>
                                     <h3 className="text-xl font-bold text-gray-900 mb-2">Socials</h3>
                                     <div className="flex space-x-3">
-                                        <a href="https://www.facebook.com/p/Ministry-of-Special-Duties-Imo-State-100095781721605/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-green-500 rounded flex items-center justify-center hover:bg-green-600 transition-colors">
+                                        <a href="#" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-green-500 rounded flex items-center justify-center hover:bg-green-600 transition-colors">
                                             <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
                                                 <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
                                             </svg>
@@ -258,12 +262,23 @@ export default function Contact() {
                                     ></textarea>
                                     {errors.message && <p id="message-error" className="mt-2 text-sm text-red-600">{errors.message}</p>}
                                 </div>
+                                <div>
                                 <div className="flex items-center">
-                                    <input type="checkbox" required id="not-robot" name="not-robot" className="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded" />
+                                    <input
+                                        type="checkbox"
+                                        required
+                                        id="not-robot"
+                                        name="notRobot"
+                                        className="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded"
+                                        onChange={handleChange}
+                                        checked={formValues.notRobot}
+                                    />
                                     <label htmlFor="not-robot" className="ml-2 block text-sm text-gray-700">
                                         I&apos;m not a robot
                                     </label>
                                 </div>
+                                {errors.notRobot && <p id="not-robot-error" className="mt-2 text-sm text-red-600">{errors.notRobot}</p>}
+                            </div>
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}

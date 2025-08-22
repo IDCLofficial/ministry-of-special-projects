@@ -44,6 +44,6 @@ export const NAV_LINKS: NavLink[] = [
 
 export const CONTACT_INFO = {
   address: "Ministry of Special Duties, block 10, State Secretariat Complex, Imo, Nigeria",
-  email: "imost.ministryofspecialduties@gmail.com",
+  email: "info@specialprojects.im.gov",
   phone: "0814 397 5074"
 };
