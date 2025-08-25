@@ -20,6 +20,7 @@ export default async function ProjectDetail({ params, searchParams }: PageProps)
     const projectData = await contentfulService.getProjectById(id);
 
     if (!projectData) {
+        console.log("Project not found", slug);
         notFound();
     }
 
