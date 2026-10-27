@@ -1,6 +1,14 @@
 import AnimatedEntrance from "../../components/AnimatedEntrance";
 import { ANIMATION_PRESETS } from "../../utils/constants/animations";
 import TabContentSystem from "../components/TabContentSystem";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Departments",
+  description: "Departments and units of the Ministry of Special Projects, Imo State Government.",
+  path: "/department",
+});
+
 
 export default function Department() {
     return (
