@@ -6,8 +6,8 @@ import { ANIMATION_PRESETS, STAGGER_DELAYS } from "../../utils/constants/animati
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Services",
-  description: "Services offered by the Ministry of Special Projects of the Imo State Government.",
+  title: "Special Projects Portfolio",
+  description: "Light Up Imo, road infrastructure and anti-flood works, community and social development projects, the Imo Digital City Initiative and project management in Imo State.",
   path: "/services",
 });
 

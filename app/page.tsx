@@ -10,8 +10,8 @@ import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: { absolute: "Ministry of Special Projects | Imo State Government" },
-  description: "Official website of the Ministry of Special Projects, Imo State Government: services, departments, projects, news and events.",
+  title: { absolute: "Imo State Ministry of Special Projects" },
+  description: "Infrastructure and development projects in Imo State: Light Up Imo, road and anti-flood works, urban renewal, the Imo Digital City Initiative and CSDP.",
   path: "/",
 });
 
